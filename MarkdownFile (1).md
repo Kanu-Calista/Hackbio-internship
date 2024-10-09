@@ -135,16 +135,16 @@ Consists of a training and testing stage for creating models that use molecular 
 
 The preprocessing process involves searching for the target protein EGFR on the chembl database, filtering bioactivity data, and removing duplicate entries using SMILES. The data is then classified into three categories: Inactive (IC50 ≥ 10,000 nM), Active (IC50 ≤ 1,000 nM), and Intermediate (IC50 < 10,000 nM). A new column class is added to represent these categories. A code scripted calculates molecular descriptors based on Lipinski's rule of five to assess drug-likeness. I introduced code that sets up molecular descriptor calculations using RDKit.The data is then converted to pIC50 to ensure uniform distribution. The figure below describes the pIC50 column.
 
-[![pIC50]![image](https://github.com/user-attachments/assets/f7d65b2d-7052-48be-87a7-da9a0786cdf6)
+[![pIC50]!(https://github.com/user-attachments/assets/f7d65b2d-7052-48be-87a7-da9a0786cdf6)
 
 
 Exploratory Data Analysis via lipinski descriptors
 
-[![Bar plot]![image](https://github.com/user-attachments/assets/4b70c175-2f53-4100-b91f-f3f81482647b)
+[![Bar plot](https://github.com/user-attachments/assets/4b70c175-2f53-4100-b91f-f3f81482647b)
 
 
 
-[![Scatter plot]![image](https://github.com/user-attachments/assets/1290e861-f6e0-424a-b370-9ead3590b132)
+[![Scatter plot](https://github.com/user-attachments/assets/1290e861-f6e0-424a-b370-9ead3590b132)
 
 
 
