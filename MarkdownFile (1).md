@@ -172,4 +172,4 @@ This study successfully built Random Forest model for predicting pIC50 values, d
 
  
  Attached files:
- [Supplementary files](https://supplementary.com)
+ [Supplementary files](https://supplementaryfiles.com)
