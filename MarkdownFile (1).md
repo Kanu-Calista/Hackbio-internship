@@ -135,14 +135,17 @@ Consists of a training and testing stage for creating models that use molecular 
 
 The preprocessing process involves searching for the target protein EGFR on the chembl database, filtering bioactivity data, and removing duplicate entries using SMILES. The data is then classified into three categories: Inactive (IC50 ≥ 10,000 nM), Active (IC50 ≤ 1,000 nM), and Intermediate (IC50 < 10,000 nM). A new column class is added to represent these categories. A code scripted calculates molecular descriptors based on Lipinski's rule of five to assess drug-likeness. I introduced code that sets up molecular descriptor calculations using RDKit.The data is then converted to pIC50 to ensure uniform distribution. The figure below describes the pIC50 column.
 
-[![pIC50]!(https://github.com/user-attachments/assets/46139038-2388-4423-bed0-bcec0186588e)
+[![pIC50]![image](https://github.com/user-attachments/assets/f7d65b2d-7052-48be-87a7-da9a0786cdf6)
+
 
 Exploratory Data Analysis via lipinski descriptors
 
-[![Bar plot]![image](https://github.com/user-attachments/assets/614bd8c8-edd7-4bb0-a338-806775df73e2)
+[![Bar plot]![image](https://github.com/user-attachments/assets/4b70c175-2f53-4100-b91f-f3f81482647b)
 
 
-[![Scatter plot]![image](https://github.com/user-attachments/assets/b7479eb9-99e7-4c54-8aea-6b593a532b4f)
+
+[![Scatter plot]![image](https://github.com/user-attachments/assets/1290e861-f6e0-424a-b370-9ead3590b132)
+
 
 
 Functions were imported from the RDKit library to handle SMILES strings and visualize molecular structures.The list of SMILES strings are standardized into their canonical form, including the docked ligands Demethoxycurcumin and Ar-turmerone. Lipinski and Descriptor function were ran on the smiles of the docked ligands including the chembl molecules with 200 descriptors for each molecule. The pIC50 column was added to the ligand table, the cleaning process consisted of removing duplicated columns, removing NaN,removal of the ‘Ipc’ table to ensure no Infinity values are detected during modeling.
