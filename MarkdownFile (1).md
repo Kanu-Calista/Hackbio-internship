@@ -56,7 +56,8 @@ PrankWeb and CASTp \[8\] discovered more pockets that help to comprehend binding
 | Score | 11.55 |
 
 Figure 2: Crystal structure of 4ZAU (AZD9291) complex with wild type EGFR showing the most active pocket.
-[![crystal protein](https://github.com/user-attachments/assets/3d00009e-2a79-42d5-82df-702dd9fb3c84)
+[![crystal protein]![image](https://github.com/user-attachments/assets/b2bb0fde-6184-4062-92ed-276348055ac7)
+
 
 
 ### Conclusion
@@ -134,7 +135,7 @@ Consists of a training and testing stage for creating models that use molecular 
 
 The preprocessing process involves searching for the target protein EGFR on the chembl database, filtering bioactivity data, and removing duplicate entries using SMILES. The data is then classified into three categories: Inactive (IC50 ≥ 10,000 nM), Active (IC50 ≤ 1,000 nM), and Intermediate (IC50 < 10,000 nM). A new column class is added to represent these categories. A code scripted calculates molecular descriptors based on Lipinski's rule of five to assess drug-likeness. I introduced code that sets up molecular descriptor calculations using RDKit.The data is then converted to pIC50 to ensure uniform distribution. The figure below describes the pIC50 column.
 
-[![pIC50]![image](https://github.com/user-attachments/assets/46139038-2388-4423-bed0-bcec0186588e)
+[![pIC50]!(https://github.com/user-attachments/assets/46139038-2388-4423-bed0-bcec0186588e)
 
 Exploratory Data Analysis via lipinski descriptors
 
