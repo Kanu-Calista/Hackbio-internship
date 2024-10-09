@@ -20,7 +20,8 @@ Using PubChem \[3\] I selected 50 phytochemicals from Curcuma longa, a widely us
 
 #### Figure 1: Prepared protein
 
-![](file:///C:/Users/Dell/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+[![a prepared protein](https://github.com/user-attachments/assets/f8d1a19a-63cf-484d-85ec-fff34a20f94b)
+
 
 ##### Library creation
 
