@@ -169,3 +169,5 @@ This study successfully built Random Forest model for predicting pIC50 values, d
 ### References 
 
  Berg, D., & Mooney, P. (2017). Machine learning in drug discovery: Challenges and emerging solutions. Drug Discovery Today, 22(9), 1364-1374. [https://doi.org/10.1016/j.drudis.2017.05.01](https://doi.org/10.1016/j.drudis.2017.05.01)
+ Attached files:
+ [Supplementary files](https://supplementary.com)
