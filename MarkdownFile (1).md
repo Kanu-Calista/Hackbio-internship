@@ -55,7 +55,9 @@ PrankWeb and CASTp \[8\] discovered more pockets that help to comprehend binding
 | Grid Box Dimensions | X: 68.0520  Y: 49.0072  Z:25 |
 | Score | 11.55 |
 
-Figure 2: Crystal structure of 4ZAU (AZD9291) complex with wild type EGFR showing the most active pocket.![](file:///C:/Users/Dell/AppData/Local/Temp/msohtmlclip1/01/clip_image003.png)
+Figure 2: Crystal structure of 4ZAU (AZD9291) complex with wild type EGFR showing the most active pocket.
+[![crystal protein](https://github.com/user-attachments/assets/3d00009e-2a79-42d5-82df-702dd9fb3c84)
+
 
 ### Conclusion
 
@@ -132,13 +134,15 @@ Consists of a training and testing stage for creating models that use molecular 
 
 The preprocessing process involves searching for the target protein EGFR on the chembl database, filtering bioactivity data, and removing duplicate entries using SMILES. The data is then classified into three categories: Inactive (IC50 ≥ 10,000 nM), Active (IC50 ≤ 1,000 nM), and Intermediate (IC50 < 10,000 nM). A new column class is added to represent these categories. A code scripted calculates molecular descriptors based on Lipinski's rule of five to assess drug-likeness. I introduced code that sets up molecular descriptor calculations using RDKit.The data is then converted to pIC50 to ensure uniform distribution. The figure below describes the pIC50 column.
 
-![](file:///C:/Users/Dell/AppData/Local/Temp/msohtmlclip1/01/clip_image005.png)
+[![pIC50]![image](https://github.com/user-attachments/assets/46139038-2388-4423-bed0-bcec0186588e)
 
 Exploratory Data Analysis via lipinski descriptors
 
-![](file:///C:/Users/Dell/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png)
+[![Bar plot]![image](https://github.com/user-attachments/assets/614bd8c8-edd7-4bb0-a338-806775df73e2)
 
-![](file:///C:/Users/Dell/AppData/Local/Temp/msohtmlclip1/01/clip_image007.png)
+
+[![Scatter plot]![image](https://github.com/user-attachments/assets/b7479eb9-99e7-4c54-8aea-6b593a532b4f)
+
 
 Functions were imported from the RDKit library to handle SMILES strings and visualize molecular structures.The list of SMILES strings are standardized into their canonical form, including the docked ligands Demethoxycurcumin and Ar-turmerone. Lipinski and Descriptor function were ran on the smiles of the docked ligands including the chembl molecules with 200 descriptors for each molecule. The pIC50 column was added to the ligand table, the cleaning process consisted of removing duplicated columns, removing NaN,removal of the ‘Ipc’ table to ensure no Infinity values are detected during modeling.
 
